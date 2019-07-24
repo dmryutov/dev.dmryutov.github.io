@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: nginx/Dockerfile
+    ports:
+      - 8000:80
+    restart: always

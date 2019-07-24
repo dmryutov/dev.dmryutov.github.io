@@ -1,0 +1,23 @@
+language: node_js
+node_js: node
+
+cache:
+  directories:
+    - node_modules
+
+script:
+  - npm run test
+
+before_deploy:
+  - npm run build
+
+deploy:
+  provider: pages
+  github-token: $GITHUB_TOKEN
+  skip-cleanup: true
+  keep-history: true
+  local-dir: dist
+  repo: dmryutov/dmryutov.github.io
+  target-branch: master
+  on:
+    branch: master
