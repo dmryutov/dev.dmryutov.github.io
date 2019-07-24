@@ -9,6 +9,7 @@ const localVue = createLocalVue();
 describe('components/project/StackGroup', () => {
     it('render', () => {
         const wrapper = mount(StackGroup, {
+            localVue,
             propsData: {
                 items: ['item1', 'item2'],
             },

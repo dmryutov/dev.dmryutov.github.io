@@ -18,12 +18,16 @@ describe('components/home/Footer', () => {
 
 
     it('render', () => {
-        const wrapper = mount(Footer);
+        const wrapper = mount(Footer, {
+            localVue,
+        });
         expect(wrapper.exists()).toBe(true);
     });
 
     it('computed/currentYear', () => {
-        const wrapper = mount(Footer);
+        const wrapper = mount(Footer, {
+            localVue,
+        });
         expect(wrapper.exists()).toBe(true);
 
         // Test footer year
