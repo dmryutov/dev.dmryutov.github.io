@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /index.html
+Allow: /assets/*.pdf
+Allow: /img/*.jpg
+Allow: /img/*.png
+Allow: /img/*.svg
+Host: dmryutov.github.io
