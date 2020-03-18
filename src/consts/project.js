@@ -27,6 +27,7 @@ const STACK_CSS3 = 'CSS3';
 const STACK_HTML = 'HTML';
 const STACK_HTML5 = 'HTML5';
 const STACK_JQUERY = 'jQuery';
+const STACK_NUXT = 'Nuxt.js';
 const STACK_OPENGL = 'OpenGL';
 const STACK_QT = 'Qt';
 const STACK_RAD_STUDIO = 'RAD Studio';
@@ -682,6 +683,33 @@ export const PROJECTS = [
                 STACK_DOCKER,
                 STACK_GITLAB_CI,
                 STACK_PROMETHEUS,
+            ],
+        },
+    },
+    {
+        id: 31,
+        name: 'Rose\'n\'Joy',
+        description: 'Интернет-магазин цветов',
+        date: '2020-02-01',
+        platform: PLATFORM_WEB,
+        stack: {
+            backend: [
+                STACK_PYTHON,
+                STACK_DJANGO,
+                STACK_DRF,
+            ],
+            frontend: [
+                STACK_HTML5,
+                STACK_SASS,
+                STACK_NUXT,
+                STACK_BOOTSTRAP,
+                STACK_WEBPACK,
+            ],
+            db: [
+                STACK_POSTGRESQL,
+            ],
+            other: [
+                STACK_DOCKER,
             ],
         },
     },

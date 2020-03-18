@@ -6,9 +6,10 @@ module.exports = {
         'stylelint-config-rational-order',
     ],
     rules: {
-        'indentation': 4,
         'at-rule-no-unknown': [true, {
             'ignoreAtRules': ['function', 'if', 'each', 'include', 'mixin']
         }],
+        'indentation': 4,
+        'max-empty-lines': 2,
     }
 };

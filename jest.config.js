@@ -1,5 +1,6 @@
 /* eslint-disable */
 module.exports = {
+    preset: '@vue/cli-plugin-unit-jest',
     moduleFileExtensions: ['js', 'jsx', 'json', 'vue'],
     transform: {
         '^.+\\.vue$': 'vue-jest',
@@ -12,13 +13,15 @@ module.exports = {
     snapshotSerializers: ['jest-serializer-vue'],
     testMatch: [
         '<rootDir>/tests/**.(js|jsx|ts|tsx)',
+        '**/?(*.)+(spec|test).(js|jsx|ts|tsx)',
     ],
     testURL: 'http://localhost/',
     collectCoverage: true,
     collectCoverageFrom: [
-        '<rootDir>/src/**.(js|jsx|ts|tsx|vue)',
-        '!<rootDir>/src/main.js',
-        '!<rootDir>/src/components/toast/**',
+        '<rootDir>/src/**.(js|jsx|ts|tsx)',
+        '**/src/**/*.(js|jsx|ts|tsx|vue)',
+        '!**/main.js',
+        '!**/components/toast/**',
     ],
     coverageReporters: ['html', 'text-summary'],
 };
